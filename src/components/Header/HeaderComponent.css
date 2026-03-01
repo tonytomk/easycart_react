@@ -1,0 +1,43 @@
+.icon {
+  font-size: 3rem;
+  margin: 1rem;
+  color: darkred;
+  cursor: pointer;
+}
+
+.count {
+  font-size: 2rem;
+  color: darkblue;
+  height: 2rem;
+  width: 2rem;
+  padding: 0px;
+  position: absolute;
+  top: 0rem;
+  background: rgb(214, 21, 166);
+  right: 0rem;
+  border-radius: 50%;
+  transition: height .4s .1s, width .4s .1s, box-shadow .3s;
+  transition-timing-function: cubic-bezier(.67, .17, .32, .95);
+}
+
+.user_section {
+  display: flex;
+  align-items: center;
+}
+
+/* Header always full width */
+.header {
+  background: linear-gradient(to left bottom, #14e0e7 40%, #048ece 50%);
+  display: flex;
+  width: 100%;
+  min-width: 90vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+    .main-header {
+      font-size: 2rem;
+      padding: 1.5rem;
+    }

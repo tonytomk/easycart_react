@@ -1,0 +1,171 @@
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  order: 2;
+  height: 100%;
+}
+
+  .main-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .main-cards .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    gap: 0;
+  }
+  .main-cards .cards .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    flex: 0 0 15rem;
+    max-width: 15rem;
+    min-width: 15rem;
+    height: 20rem;
+    background: white;
+    font-size: 1.1rem;
+    margin: 1.2rem 0.7rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    justify-content: space-between;
+  }
+  .main-cards .cards .card .item-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgrey;
+    padding: 2px 6px;
+    font-size: 1rem;
+  }
+  .main-cards .cards .card .item-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    padding: 2px 6px;
+  }
+  .main-cards .cards .card .item-image {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.7rem;
+  }
+  .main-cards .cards .card .item-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 12rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px 4px 0 0;
+  }
+  .main-cards .cards .card .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 2px 6px 10px 6px;
+    gap: 0.5rem;
+  }
+  .main-cards .cards .card .buttons .btn {
+    display: inline-block;
+    width: 6.5rem;
+    height: 2.3rem;
+    background: linear-gradient(90deg, #f5f5f5 0%, #e0e0e0 100%);
+    color: #d32f2f;
+    border: 1px solid #bdbdbd;
+    cursor: pointer;
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    letter-spacing: 0.2px;
+    padding: 0 0.2rem;
+    white-space: normal;
+    line-height: 1.1;
+  }
+  .main-cards .cards .card .buttons .btn:first-child {
+    background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+    color: #1976d2;
+    border: 1px solid #90caf9;
+  }
+  .main-cards .cards .card .buttons .btn:last-child {
+    background: linear-gradient(90deg, #fff3e0 0%, #ffe0b2 100%);
+    color: #d84315;
+    border: 1px solid #ffb74d;
+  }
+  .main-cards .cards .card .buttons .btn:hover {
+    background: linear-gradient(90deg, #e0e0e0 0%, #f5f5f5 100%);
+    color: #b71c1c;
+    border: 1.5px solid #bdbdbd;
+  }
+  .main-cards .cards .card .buttons .btn:first-child:hover {
+    background: linear-gradient(90deg, #bbdefb 0%, #e3f2fd 100%);
+    color: #0d47a1;
+    border: 1.5px solid #1976d2;
+  }
+  .main-cards .cards .card .buttons .btn:last-child:hover {
+    background: linear-gradient(90deg, #ffe0b2 0%, #fff3e0 100%);
+    color: #bf360c;
+    border: 1.5px solid #d84315;
+  }
+  .main-cards .cards .card .link-button {
+    text-decoration: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    background: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+  .main-cards .cards .card .link-button:active,
+  .main-cards .cards .card .link-button:focus {
+    outline: none;
+  }
+
+
+.indexing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+.indexing li {
+  list-style: none;
+  margin: 0 0.5rem;
+  border-radius: 10px;
+  background: darkblue;
+  padding: 0.7rem 1.3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s, border 0.2s;
+  border: 2px solid transparent;
+  user-select: none;
+}
+.indexing li:hover {
+  background: #0033cc;
+  border: 2px solid #fff;
+}
+.indexing li.active {
+  background: #0055ff;
+  border: 2px solid #fff;
+}

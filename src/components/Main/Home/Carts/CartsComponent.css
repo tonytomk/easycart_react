@@ -1,0 +1,68 @@
+/* Cart table and layout styles based on Vue version */
+.cart-table {
+  width: 100%;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+.cart-table th {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #ccc;
+}
+.cart-table td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+.cart-table .image-td {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-table .image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.cart-table .title {
+  text-align: left;
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+}
+.cart-table .input {
+  width: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+.cart-total {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0 1rem 0;
+  gap: 2rem;
+}
+.cart-checkout {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+.cart-checkout .btn {
+  display: inline-block;
+  width: 8rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, #e0e0e0, #fff);
+  color: #d32f2f;
+  border: 1px solid #10afdf;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.cart-checkout .btn:hover {
+  background: linear-gradient(to right, #b3e5fc, #fffde7);
+  color: #1976d2;
+}
